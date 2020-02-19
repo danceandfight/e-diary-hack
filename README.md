@@ -4,12 +4,14 @@
 
 ## Как использовать
 
-Скачайте репозиторий и поместите файлы из него в папку с `manage.py`. В файле scripts.py находятся функции, которые нужно будет использовать, а в файле commendation_examples.txt - список фраз для похвалы.
+Скачайте репозиторий и поместите файлы из него в папку с `manage.py`. В файле scripts.py находятся функции, которые нужно будет использовать, а в файле `commendation_examples.txt` - список фраз для похвалы.
 
 Для использования программы сайт должен быть уже запущен и вы должны находиться в командной строке в каталоге с файлом `manage.py`, затем запустить shell (интерактивную консоль Django) и импортировать функции:
 
-`python3 manage.py shell`
-`from scripts import fix_marks, remove_chastisements, create_commendation`
+```
+python3 manage.py shell
+from scripts import fix_marks, remove_chastisements, create_commendation
+```
 
 Для того чтобы исправить сразу все плохие оценки на пятерки введите следующую команду, подставив нужные фамилию и имя:
 `fix_marks('Фамилия Имя')`
