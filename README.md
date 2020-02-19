@@ -8,8 +8,10 @@
 
 Для использования программы сайт должен быть уже запущен и вы должны находиться в командной строке в каталоге с файлом `manage.py`, затем запустить shell (интерактивную консоль Django) и импортировать функции:
 
-```python3 manage.py shell
-from scripts import fix_marks, remove_chastisements, create_commendation```
+```
+python3 manage.py shell
+from scripts import fix_marks, remove_chastisements, create_commendation
+```
 
 Для того чтобы исправить сразу все плохие оценки на пятерки введите следующую команду, подставив нужные фамилию и имя:
 `fix_marks('Фамилия Имя')`
