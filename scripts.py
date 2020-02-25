@@ -1,4 +1,5 @@
 import random
+import sys
 
 from datacenter.models import Schoolkid, Mark, Lesson, Chastisement, Commendation
 from django.core.exceptions import MultipleObjectsReturned
@@ -9,8 +10,10 @@ def get_child(child_name):
         return child
     except MultipleObjectsReturned:
         print('В школе несколько учеников с таким именем')
+        sys.exit()
     except Schoolkid.DoesNotExist:
         print('Нет такого ученика')
+        sys.exit()
 
 def fix_marks(child_name):
     child = get_child(child_name)
